@@ -30,7 +30,7 @@ export default class Link extends Component{
 Link.propTypes = {
   title: PropTypes.string,
   likeAction: PropTypes.func,
-  unLikeAction: PropTypes.func,
+  unLikeAction : PropTypes.func,
   liked: PropTypes.bool,
   count: PropTypes.number,
   url: PropTypes.string,

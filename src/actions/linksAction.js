@@ -4,10 +4,12 @@ export function getLinks(msg, context) {
   return function(dispatch) {
     dispatch({ type: "Getting_Links" });
     axios
-      .get("https://likemachine-api.nerdgeschoss.de/links")
+      .get("https://likemachine-api.nerdgeschoss.de/links", {
+        headers: { Accept: "application/json" }
+      })
       .then(response => {
         console.log(response);
-        dispatch({ type: "Finished_Getting_Links", payload: response });
+        dispatch({ type: "Finished_Getting_Links", payload: response.data });
       })
       .catch(response => {
         dispatch({ type: "Error_Getting_links", payload: response });
@@ -15,15 +17,11 @@ export function getLinks(msg, context) {
   };
 }
 
-export function like(id){
+export function like(id) {}
 
-}
+export function unlike(id) {}
 
-export function unlike(id){
-
-}
-
-export function AddLink(link){
+export function AddLink(link) {
   return function(dispatch) {
     dispatch({ type: "Adding_Link" });
     axios
