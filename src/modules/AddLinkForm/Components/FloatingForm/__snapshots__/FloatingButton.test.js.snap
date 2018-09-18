@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Floating Form disappears when open is false 1`] = `
+<div
+  className="floatingform__container disappear"
+>
+  <h2>
+    Add New Link
+  </h2>
+  <div
+    className="form"
+  >
+    <div
+      className="formGroup"
+    >
+      <label>
+        Title:
+      </label>
+      <input
+        name="title"
+        onChange={[Function]}
+        type="text"
+      />
+    </div>
+    <div
+      className="formGroup"
+    >
+      <label>
+        URL:
+      </label>
+      <input
+        name="url"
+        onChange={[Function]}
+        type="text"
+      />
+    </div>
+    <div
+      className="formGroup"
+    >
+      <label>
+        Image URL:
+      </label>
+      <input
+        name="img"
+        onChange={[Function]}
+        type="text"
+      />
+    </div>
+    <button
+      onClick={[Function]}
+    >
+      Add
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Floating Form disappears when open is true 1`] = `
+<div
+  className="floatingform__container appear"
+>
+  <h2>
+    Add New Link
+  </h2>
+  <div
+    className="form"
+  >
+    <div
+      className="formGroup"
+    >
+      <label>
+        Title:
+      </label>
+      <input
+        name="title"
+        onChange={[Function]}
+        type="text"
+      />
+    </div>
+    <div
+      className="formGroup"
+    >
+      <label>
+        URL:
+      </label>
+      <input
+        name="url"
+        onChange={[Function]}
+        type="text"
+      />
+    </div>
+    <div
+      className="formGroup"
+    >
+      <label>
+        Image URL:
+      </label>
+      <input
+        name="img"
+        onChange={[Function]}
+        type="text"
+      />
+    </div>
+    <button
+      onClick={[Function]}
+    >
+      Add
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,48 @@
+header{
+  grid-column: 1/4;
+  grid-row: 1;
+  background-color: #8181E4;
+  padding: 10px;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__auth{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__auth input{
+  height: 30px;
+  width: 160px;
+  border: none;
+  margin-right: 5px;
+  padding-left: 10px;
+}
+
+.header__auth button{
+  height: 32px;
+  width: 60px;
+  border: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+}
+
+.header__auth button:hover{
+  color: white;
+}
+
+.fb_login{
+  height: 100%;
+  margin-right: 6px;
+}
+
+.fb_login img{
+  height: 40px;
+}

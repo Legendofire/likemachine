@@ -1,0 +1,35 @@
+.floatingButton{
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #8181E4;
+  font-size: 3em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  z-index: 10;
+}
+
+.floatingButton:hover{
+  background-color: rgba(0,0,200,0.8);
+}
+
+.open{
+  animation: open 0.3s ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.close{
+  animation: open 0.3s ease-in 1s reverse;
+  animation-fill-mode: forwards;
+}
+
+@keyframes open {
+  0% { transform: rotate(0deg); background-color: rgba(0,0,200,0.8); }
+  100% { transform: rotate(45deg); background-color: rgba(200,0,0,0.8); }
+}

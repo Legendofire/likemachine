@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinksContainer renders the supplied links correctly 1`] = `
+<div
+  className="links__container"
+>
+  <div
+    className="link__container"
+  >
+    <div
+      className="link__title"
+    >
+      <h3>
+        Jens Ravens
+      </h3>
+      <div
+        className="likes__container"
+      >
+        <a
+          onClick={[Function]}
+        >
+          <img
+            alt=""
+            className="heart"
+            src="heart.png"
+          />
+        </a>
+        <h3>
+          0
+        </h3>
+      </div>
+    </div>
+    <a
+      className="link__image"
+      href="http://jensravens.com"
+      onClick={[Function]}
+    >
+      <img
+        alt=""
+        src="http://jensravens.de/img/profile.jpg"
+      />
+    </a>
+    <div
+      className="link__description"
+    >
+      <h5>
+        I'm a Berlin-based iOS and Ruby on Rails developer working for nerdgeschoss. Also I'm organizing the monthly swift.berlin meetup and I'm obsessed with application architecture and maintainable code bases in Swift and Ruby on Rails.
+        
+      </h5>
+    </div>
+  </div>
+  <div
+    className="link__container"
+  >
+    <div
+      className="link__title"
+    >
+      <h3>
+        nerdgeschoss
+      </h3>
+      <div
+        className="likes__container"
+      >
+        <a
+          onClick={[Function]}
+        >
+          <img
+            alt=""
+            className="heart"
+            src="heart.png"
+          />
+        </a>
+        <h3>
+          0
+        </h3>
+      </div>
+    </div>
+    <a
+      className="link__image"
+      href="http://nerdgeschoss.de"
+      onClick={[Function]}
+    >
+      <img
+        alt=""
+        src="https://nerdgeschoss.de/de9b1b02ad130cc0c842cda20352c713.svg"
+      />
+    </a>
+    <div
+      className="link__description"
+    >
+      <h5>
+        We're a product development studio, busy designing and building tomorrow's apps.
+      </h5>
+    </div>
+  </div>
+</div>
+`;

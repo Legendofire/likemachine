@@ -1,0 +1,11 @@
+.links__container{
+  background-color: white;
+  grid-column: 2;
+  grid-row: 2;
+  padding: 3px;
+  display: grid;
+  grid-template: auto/repeat(3 ,1fr);
+  grid-gap: 25px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

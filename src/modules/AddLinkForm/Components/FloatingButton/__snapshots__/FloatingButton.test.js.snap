@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Floating Button Rotates to + when open is false 1`] = `
+<button
+  className="floatingButton close"
+  onClick={undefined}
+>
+  <span>
+    +
+  </span>
+</button>
+`;
+
+exports[`Floating Button Rotates to x when open is true 1`] = `
+<button
+  className="floatingButton open"
+  onClick={undefined}
+>
+  <span>
+    +
+  </span>
+</button>
+`;

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Renders With Supplied Data 1`] = `
+<div
+  className="link__container"
+>
+  <div
+    className="link__title"
+  >
+    <h3>
+      This is a title
+    </h3>
+    <div
+      className="likes__container"
+    >
+      <a
+        onClick={undefined}
+      >
+        <img
+          alt=""
+          className="heart heart--liked"
+          src="heart.png"
+        />
+      </a>
+      <h3>
+        302
+      </h3>
+    </div>
+  </div>
+  <a
+    className="link__image"
+    href="http://www.google.com"
+    onClick={undefined}
+  >
+    <img
+      alt=""
+      src="http://www.facebook.com"
+    />
+  </a>
+  <div
+    className="link__description"
+  >
+    <h5>
+      This is a description
+    </h5>
+  </div>
+</div>
+`;
