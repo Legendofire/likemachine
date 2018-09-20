@@ -49,14 +49,17 @@ class LinksContainer extends Component {
 
 function mapStateToProps(state) {
   return {
-    Links: state.Links
+    Links: state.Links,
+
   };
 }
 
 function matchDispatchToProps(dispatch) {
   return bindActionCreators(
     {
-      getLinks: getLinks
+      getLinks: getLinks,
+      like: like,
+      unlike: unlike
     },
     dispatch
   );

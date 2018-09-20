@@ -11,6 +11,10 @@ header{
   align-items: center;
 }
 
+header h1{
+  margin-left: 60px; 
+}
+
 .header__auth{
   display: flex;
   flex-direction: row;

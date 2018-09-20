@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Link from './Link';
+import Link from '../../../../modules/Links/Components/Link';
 
 test('Link Renders With Supplied Data', () => {
   const component = renderer.create(

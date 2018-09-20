@@ -3,7 +3,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
 
-import { Authenticate } from "../../actions/userAction";
+import { Authenticate, Logout } from "../../actions/userAction";
 
 import "./Header.css";
 
@@ -20,8 +20,8 @@ class Header extends Component {
               callback={(response)=>{this.props.Authenticate(response)}}
               scope="public_profile,email"
               render={renderProps => (
-                <a className="fb_login" onClick={() => renderProps.onClick()}>
-                  <img src="fb_icon.png" alt="F" />
+                <a className="fb_login" onClick={() => {renderProps.onClick()}}>
+                  <img src="fb_icon.png" alt="facebook" />
                 </a>
               )}
             />
@@ -31,8 +31,8 @@ class Header extends Component {
           </div>
         ) : (
           <div className="header__auth">
-            <span className="header_username">Hello, Ahmed</span>
-            <button>Logout</button>
+            <span className="header_username">Hello, {this.props.User.username}</span>
+            <button onClick={()=>{this.props.Logout(this.props.User.session_id)}}>Logout</button>
           </div>
         )}
       </header>
@@ -50,7 +50,8 @@ function mapStateToProps(state) {
 function matchDispatchToProps(dispatch) {
   return bindActionCreators(
     {
-      Authenticate: Authenticate
+      Authenticate: Authenticate,
+      Logout: Logout
     },
     dispatch
   );

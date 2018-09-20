@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 
-import LinksContainer from './LinksContainer';
+import LinksContainer from '../../../../modules/Links/Containers/LinksContainer';
 
 const fakeStore = state => {
   return {

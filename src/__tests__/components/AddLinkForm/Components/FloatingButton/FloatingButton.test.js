@@ -1,5 +1,5 @@
 import React from 'react';
-import FloatingButton from './FloatingButton';
+import FloatingButton from '../../../../../modules/AddLinkForm/Components/FloatingButton/FloatingButton';
 import renderer from 'react-test-renderer';
 
 test('Floating Button Rotates to + when open is false', () => {

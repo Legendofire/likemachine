@@ -34,7 +34,7 @@ export default class FloatingForm extends Component{
             <label>Image URL:</label>
             <input onChange={(e)=>this.updateFormData(e.target)} name="img" type="text"/>
           </div>
-          <button onClick={()=>this.props.formSubmitAction(this.state)}>Add</button>
+          <button onClick={()=>{this.props.formSubmitAction(this.state,this.props.session_id)}}>Add</button>
         </div>
       </div>
     )

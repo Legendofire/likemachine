@@ -52,11 +52,6 @@ export default function reducer(
         ...newState
       };
     }
-    case "Update_Form": {
-      return {
-        ...newState
-      };
-    }
     case "Adding_Link": {
       return {
         ...newState

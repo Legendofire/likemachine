@@ -1,5 +1,5 @@
 import React from 'react';
-import FloatingForm from './FloatingForm';
+import FloatingForm from '../../../../../modules/AddLinkForm/Components/FloatingForm/FloatingForm';
 import renderer from 'react-test-renderer';
 
 test('Floating Form disappears when open is false', () => {

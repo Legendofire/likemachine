@@ -1,8 +1,8 @@
 export default function reducer(
   state = {
-    fbToken: "",
-    sessionID: "",
-    name: "",
+    user_id: "",
+    session_id: "",
+    username: "",
     isAuthenticated: false,
     authenticating: false,
     error: null
@@ -20,8 +20,10 @@ export default function reducer(
     case "FB_Authentication_Done": {
       return {
         ...newState,
-        fbToken: action.payload.fbToken,
-        sessionID: action.payload.sessionID,
+        user_id: action.payload.user_id,
+        session_id: action.payload.session_id,
+        username: action.payload.user_name,
+        isAuthenticated: true,
         authenticating: false
       };
     }
@@ -29,6 +31,26 @@ export default function reducer(
       return {
         ...newState,
         authenticating: false,
+        error: action.payload.error
+      };
+    }
+    case "Logout_Start": {
+      return {
+        ...newState
+      };
+    }
+    case "Logout_Done": {
+      return {
+        ...newState,
+        user_id: '',
+        session_id: '',
+        username: '',
+        isAuthenticated: false
+      };
+    }
+    case "Logout_Error": {
+      return {
+        ...newState,
         error: action.payload.error
       };
     }
